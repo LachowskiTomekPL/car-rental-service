@@ -21,4 +21,9 @@ public class CarsService {
         return carById.get();
     }
 
+    public Iterable<Cars> getAllCars(){
+
+        return carsRepository.findAll();
+    }
+
 }
